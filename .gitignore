@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+audio_cache/
+temp/
+*.mp3
+*.wav
+.venv/
+venv/
+twilio_2FA_recovery_code.txt
+get_voices.py
+test_elevenlabs.py
+transcriber.py
+voice_synthesizer.py

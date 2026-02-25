@@ -1,0 +1,43 @@
+---
+SCENARIO: multi_request_chaos
+CALL SID: CAfb86b00ac6bd96cd851df9c6859871d9
+DATE: 2026-02-24 13:01:52
+---
+
+[AGENT]: Be recorded for quality and training purposes.
+
+[PATIENT]: Hi, this is Tom Nguyen. I need to reschedule my appointment from Monday to Friday, and I'm wondering if Dr. Doug Ross has any availability soon. Also, I need to update my insurance to Blue Cross Blue Shield. Could you tell me more about the parking situation at your office? Oh, and is it normal for my knee to still feel sore weeks after surgery?
+
+[AGENT]: Got it before. I can help with your appointment insurance update and your question about me soreness.
+
+[PATIENT]: Great, thank you. Let's start with rescheduling my appointment to Friday. Can you also confirm if Dr. Doug Ross has any openings soon? And just to make sure, do you have my new insurance information updated to Blue Cross Blue Shield?
+
+[AGENT]: I can help with all of that.
+
+[PATIENT]: Thanks! Could you please check the availability for Friday? Also, can you let me know if Dr. Doug Ross can see me soon? And do you have my insurance updated to Blue Cross Blue Shield yet? Lastly, I was curious about the parking at your office—what are the options?
+
+[AGENT]: I'll help with all your questions. First, I need your date of birth to access your records and check your appointment insurance and provider availability. Could you please provide your date of birth?
+
+[PATIENT]: Sure, my date of birth is March 15, 1985. Once you have that, could you let me know about the rescheduling and Dr. Doug Ross's availability? And don't forget about updating my insurance and the parking details, please.
+
+[AGENT]: Yes, I'm still here. I'm working on. Rescheduling your appointment checking Dr. Doug Ross.
+
+[PATIENT]: Thank you! While you're checking, could you update my insurance to Blue Cross Blue Shield? And I'm really curious about the parking situation at the office. Is there ample parking or should I arrive early to find a spot? Also, I'd love to know if it's normal for my knee to be sore weeks after surgery.
+
+[AGENT]: Got it. I'm updating your insurance to Blue Cross Blue Shield and we'll check on parking details for you for your me soreness. I can let the clinic know. So a provider can follow up. Let me get this information now.
+
+[PATIENT]: Thank you so much for handling all that. I'll wait for the details on the appointment, Dr. Doug Ross's schedule, insurance update, and parking. I appreciate you passing along the knee soreness concern for a follow-up, too. Please let me know as soon as you have any updates.
+
+[AGENT]: Got it. I'm working on your appointment reschedule. Checking doctor, Doug Ross's schedule. Updating your insurance and getting parking info. I've also shared your knee concern with the clinic for follow-up.
+
+[PATIENT]: Perfect, thank you! I'll be here if you need any more information from me. Just let me know once you've got everything sorted out. I appreciate all your help today!
+
+[AGENT]: Understood James. I'll let you know as soon as I have updates on your appointment insurance and parking if I need anything else. I'll ask
+
+[PATIENT]: Just to clarify, my name is Tom Nguyen, not James. I appreciate all your help and I'm looking forward to your updates. Thanks again for assisting me with everything!
+
+[AGENT]: Thanks for letting me know, Tom. I'll make sure your updates and requests are handled for you.
+
+[PATIENT]: Great, I appreciate it. I'll wait to hear back from you with all the details. Thanks for your assistance, and have a great day! Goodbye!
+
+--- CALL ENDED (duration: 250s) ---
