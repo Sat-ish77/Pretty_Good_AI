@@ -6,7 +6,7 @@ An automated voice bot that calls the Pretty Good AI test line, simulates realis
 
 See [`architecture.md`](architecture.md) for the full design doc.
 
-**TL;DR:** `call_manager.py` tells Twilio to dial the test number. Twilio connects and hits our FastAPI webhook. We use `<Gather input="speech">` to capture the agent's speech (Twilio does real-time STT), send the text to GPT-4o to generate the patient's response, and return `<Say>` TwiML so Twilio speaks it back. This loop repeats until the conversation ends. Transcripts are saved to disk. `bug_analyzer.py` then feeds them to GPT-4o to find bugs.
+**TL;DR:** `call_manager.py` tells Twilio to dial the test number. Twilio connects and hits our FastAPI webhook. We use `<Gather input="speech">` to capture the agent's speech (Twilio does real-time STT), send the text to GPT-4o to generate the patient's response, and return `<Say>` TwiML so Twilio speaks it back. This loop repeats until the conversation ends. Transcripts are saved to disk, then reviewed for bugs.
 
 ## Quick Start
 
@@ -67,16 +67,6 @@ python call_manager.py -d 90
 python call_manager.py --list
 ```
 
-### Analyze Results
-
-After calls complete, generate the bug report:
-
-```bash
-python bug_analyzer.py
-```
-
-This reads all transcripts from `transcripts/` and writes `bug_report.md`.
-
 ## Project Structure
 
 ```
@@ -85,11 +75,9 @@ This reads all transcripts from `transcripts/` and writes `bug_report.md`.
 ├── patient_brain.py     # GPT-4o — generates patient responses per scenario
 ├── scenarios.py         # 11 patient scenarios with persona prompts
 ├── transcript_logger.py # Saves conversation transcripts to files
-├── bug_analyzer.py      # GPT-4o — auto-detects bugs in transcripts
 ├── transcripts/         # Saved call transcripts (auto-created)
-├── bug_report.md        # Auto-generated bug report
+├── bug_report.md        # Bugs found in the agent's responses
 ├── architecture.md      # System design doc
-├── loom_script.md       # Loom recording talking points
 ├── .env.example         # Required environment variables template
 ├── requirements.txt     # Python dependencies
 └── README.md
