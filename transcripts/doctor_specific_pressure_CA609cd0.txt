@@ -1,0 +1,45 @@
+---
+SCENARIO: doctor_specific_pressure
+CALL SID: CA609cd04568724213fab602139bd1dd6c
+DATE: 2026-02-25 12:04:50
+---
+
+[AGENT]: thanks for calling Pivot Point Orthopedics part of pretty good AI my speaking with James
+
+[PATIENT]: Hi James, I’m looking to schedule an appointment with Dr. Doug Ross. A friend of mine recommended him specifically for ACL reconstruction. Can you tell me a bit about his experience with that procedure?
+
+[AGENT]: Can you please provide the date of birth?
+
+[PATIENT]: Sure, my date of birth is March 15, 1990. Now, can you tell me about Dr. Ross's experience with ACL reconstruction? How many surgeries does he perform each year?
+
+[AGENT]: I can help with scheduling, but I don't have details about Dr. Doug Ross's experience with reconstruction procedures. If you'd like, I can have our Clinic support team, follow up with more information. Would you like to continue booking the appointment or should I connect you for more details?
+
+[PATIENT]: I appreciate that, but I’d really prefer to have some specifics before I book an appointment. Could you at least tell me how many ACL surgeries Dr. Ross typically performs in a year? That would help me a lot in making my decision.
+
+[AGENT]: Understood all create a case for our Clinic staff to provide you with specific information about Dr. Dunn Ross's experience,  Including the number of ACL surgeries he performs annually.  1 moment, while I get that started.
+
+[PATIENT]: I think there might have been a little mix-up with the name; I'm asking about Dr. Doug Ross, not Dr. Dunn Ross. Can you confirm that the information will be about Dr. Doug? And while you're creating that case, could you also find out if he trained at a specific hospital? That would be helpful too.
+
+[AGENT]: Thanks for clarifying. The case is for Dr. Doug Ross, not Dr. Dunross. I'll update your request to include details about where Dr. Doug Ross trained 1 moment while I add that to your case.
+
+[PATIENT]: Thank you for confirming that. I just want to ensure I get the right information, especially about his training and success rate with ACL surgeries. How long do you think it will take for the Clinic staff to get back to me on this?
+
+[AGENT]: The clinic staff will review your request and get back to you as soon as possible. Usually, within 1 business day,  If you need a faster response, let me know and I can connect you to Live Support.
+
+[PATIENT]: That sounds good. I appreciate your help with this. I think I’ll wait for the clinic staff to get back to me within the day. If it takes longer, I might consider reaching out for live support. Can you also confirm if Dr. Ross has a good success rate with ACL surgeries? That's really important for me.
+
+[AGENT]: I've included your request for Dr. Dunn Ross's ACL surgery, success rate. In the case, the clinic staff will provide you with details about his experience training and success rate. When they follow up, if you have any other questions  Just let me know.
+
+[PATIENT]: I think there might be another mix-up. I am asking about Dr. Doug Ross, not Dr. Dunn Ross. Can you double-check to make sure the case is correctly noted for Dr. Doug? I just want to make sure I get the right information.
+
+[AGENT]: Absolutely. Your request is for Dr. Doug Ross. I've made sure the case is for Dr. Doug Ross, not Dr. Dunross, the clitic staff will provide information specifically about Dr. Doug Ross's, ACL surgery, experience training, and success rate. If you have any other concerns, let me know.
+
+[PATIENT]: Thank you for confirming that it's for Dr. Doug Ross. I really appreciate your assistance in getting this information. Once I hear back from the clinic staff, I'll decide on scheduling an appointment. Is there anything else you need from me right now?
+
+[AGENT]: No, I have everything I need.  The clinic staff will reach out with a details. You requested. If you have more questions later, just give us a call.
+
+[PATIENT]: Sounds good! Thank you for your help today. I’ll be on the lookout for their response. Have a great day! 
+
+Goodbye!
+
+--- CALL ENDED (duration: 300s) ---

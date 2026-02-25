@@ -11,6 +11,6 @@ twilio_2FA_recovery_code.txt
 get_voices.py
 test_elevenlabs.py
 transcriber.py
-voice_synthesizer.py
+
 loom_script.md
 bug_analyzer.py

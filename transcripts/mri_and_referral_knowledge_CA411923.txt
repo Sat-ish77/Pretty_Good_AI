@@ -1,0 +1,39 @@
+---
+SCENARIO: mri_and_referral_knowledge
+CALL SID: CA411923bf128cc4c537300ae48004e7ab
+DATE: 2026-02-24 23:56:59
+---
+
+[AGENT]: Thanks for calling to the point Orthopedics, part of pretty good AI. Am I speaking with James?
+
+[PATIENT]: No, this is actually Michael. I have some knee pain and wanted to ask if you do MRIs in-house.
+
+[AGENT]: Got it. Michael to the point Orthopedics treats a wide range of joint and muscle issues, but we do not perform MRIs in house. We can evaluate your knee. And if needed refer you for Imaging,  would you like to schedule a visit to get your knee checked out?
+
+[PATIENT]: Yes, I’d like to schedule a visit. Just to clarify, do I need to get an MRI done before the consultation, or can that happen afterwards?
+
+[AGENT]: You do not need to get an MRI before your consultation. The provider will examine your knee first and decide if Imaging like an MRI is needed afterwards. Let's get you scheduled, can you please provide your full name and date of birth?
+
+[PATIENT]: Sure! My name is Michael Thompson, and my date of birth is April 12, 1985. Which hospital are you affiliated with for imaging if I need that later?
+
+[AGENT]: Michael, would you like me to look up your record using your phone number? If so, please provide the number you have on file with us. If you're not sure, I can confirm your name and date of birth. Again just let me know what you prefer.
+
+[PATIENT]: I’d prefer to confirm my name and date of birth since I’m not sure what phone number you have on file. It's Michael Thompson, April 12, 1985. Can you go ahead and check my record with that?
+
+[AGENT]: Something's not right. I'm unable to verify your information in the system. I'll make sure our Clinic support team follows up with you to help schedule your visit and answer your Imaging questions. Please stay on the line while I document this for our team.
+
+[PATIENT]: I understand. Can you double-check if there might be a typo in my details? My full name is Michael Thompson, and my date of birth is April 12, 1985. If that still doesn't work, could you let me know which hospital you typically refer patients to for imaging?
+
+[AGENT]: I'm unable to access your record with a details provided so I can't check for typos or confirm, your patient file ask for Imaging Pivot Point Orthopedics, typically refers patients to local imaging centers or hospitals, based on your insurance of location. The provider will discuss the best option with you during your visit. If you'd like I can have our Clinic support team reach out to help with scheduling and answer any other questions would you like me to arrange that?
+
+[PATIENT]: Yes, that would be great. I’d appreciate it if your Clinic support team could reach out to help with scheduling and any other questions I have. Also, could you advise me on how long the typical wait time is for surgery if it’s needed after the consultation?
+
+[AGENT]: I don't have exact weight times for surgery since it depends on your provider schedule, and the type of procedure needed after your consultation. Your provider will discuss next steps and help coordinate any surgery if it's recommended the clinic support team can give you more details when they reach out.
+
+[PATIENT]: That makes sense, thank you for explaining. I appreciate your help today. Just to confirm, I’m all set for the Clinic support team to reach out to me?
+
+[AGENT]: Yes, you're all set the clinic support. Team will contact you soon to help with scheduling and answer your questions.  If you need anything else, just let us know.
+
+[PATIENT]: Thank you so much for your assistance! I appreciate it. I'll wait for the Clinic support team to reach out. Have a great day! Goodbye!
+
+--- CALL ENDED (duration: 267s) ---

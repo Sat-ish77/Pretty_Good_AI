@@ -1,0 +1,41 @@
+---
+SCENARIO: insurance_pressure
+CALL SID: CAa1b3176ff03b205e18a666ab678a93eb
+DATE: 2026-02-25 10:33:54
+---
+
+[AGENT]: thanks for calling Pivot Point Orthopedics part of pretty good AI my speaking with James
+
+[PATIENT]: Hi James, this is Sarah Miller. I wanted to ask if you accept Blue Cross Blue Shield PPO?
+
+[AGENT]: Hi Sarah. Yes. Pivot Point Orthopedics, accepts most insurance plans including Blue Cross Blue Shield PP. Is there anything else I can help you with today?
+
+[PATIENT]: That’s great to hear! I also wanted to ask if you accept Medicare Part B?
+
+[AGENT]: Yes, we accept Medicare Part B at Pivot Point Orthopedics.  Would you like help with scheduling an appointment or have any other questions?
+
+[PATIENT]: I appreciate that information! Before I book an appointment, could you tell me what the out-of-pocket costs would be for a new patient consultation?
+
+[AGENT]: I don't have access to exact out-of-pocket costs, since it depends on your specific insurance plan and coverage for the most accurate estimate. I recommend calling the Clinic's billing department or checking with your insurance. Provider, would you like to schedule a new patient consultation or need help with anything else?
+
+[PATIENT]: I understand that it can vary, but could you give me a ballpark figure? I’d prefer to have a clearer idea before deciding to book an appointment. It would really help me out.
+
+[AGENT]: I understand wanting a clearer idea, most new patient consultations are built as specialist visits and typical out-of-pocket costs can range from about $50 to $200 depending on your insurance and deductible for the most accurate amount. The Clinic's billing team, or your insurance provider, can give you a detailed estimate. Would you like the clinic's phone number for billing questions? Or is there anything else I can help with?
+
+[PATIENT]: I appreciate you reiterating that, but it seems like you're providing the same information again. Just to clarify, are there any fixed fees for consultations, or is it always based on my specific insurance? I want to make an informed decision before booking anything.
+
+[AGENT]: There are no fixed fees for consultations at Pivot Point Orthopedics. The cost is always based on your specific insurance coverage copay and deductible the clinic does not set a flat rate for new patient visits. If you want an exact amount, the billing team can review your insurance details and give you a personalized estimate, would you like their contact information or help with anything else?
+
+[PATIENT]: I understand that. It just feels a bit unclear since I'm trying to get specifics before booking. Can you assure me that the consultation won't exceed a certain amount, like $200? That way, I can decide whether to proceed with scheduling.
+
+[AGENT]: I can guarantee a maximum amount since the final cost depends on your insurance plan and coverage. Most patients with insurance, pay between $50 and $200 for a new consultation, but it could be more if you have a high deductible or certain plan details for a firm answer. The billing team can review your insurance and give you a clear estimate before your visit, would you like their contact info or want to move forward with scheduling?
+
+[PATIENT]: I see, I appreciate the clarification, but it’s still a bit frustrating not having a firm number. I think I’ll hold off on scheduling for now until I can get a more definite answer about my potential costs. Thanks for your help, though! Can I get the billing team's contact info?
+
+[AGENT]: You can reach the billing team at Pivot Point Orthopedics located at 220 Athens Way Nashville. If you call the main Clinic number they can connect you directly to billing. Let me know if you need anything else.
+
+[PATIENT]: Thanks for that information. I really appreciate your help today, James. I’ll reach out to the billing team for more details before making any appointments. Have a great day! 
+
+Goodbye!
+
+--- CALL ENDED (duration: 292s) ---

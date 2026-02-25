@@ -1,0 +1,67 @@
+---
+SCENARIO: sunday_appointment_trap
+CALL SID: CA1ef0eddbbeebb894d19800875f0e6b83
+DATE: 2026-02-25 11:46:41
+---
+
+[AGENT]: Thanks for calling Pivot Point Orthopedics. Part of pretty good AI. Am I speaking with James?
+
+[PATIENT]: Yes, this is James. How can I help you today?
+
+[AGENT]: Can you please provide your date of birth?
+
+[PATIENT]: Sure, my date of birth is March 15, 1990.
+
+[AGENT]: The birthday doesn't match our records, but for demo purposes, I'll accept it. Got it games. How can I help you today?
+
+[PATIENT]: I'm looking to book an appointment for a check-up, specifically on a Sunday. Do you have any availability?
+
+[AGENT]: Got it, let me check. Sunday availability for a checkup appointment. 1 moment while I look that up.
+
+[PATIENT]: Sure, take your time.
+
+[AGENT]: There are no available checkup appointments on Sundays right now. Would you like to look at other days or do you have a different preference?
+
+[PATIENT]: Are you closed on Sundays or just fully booked?
+
+[AGENT]: I don't have details about the clinic Sunday hours. But there are no open appointments available or on Sundays right now. Would you like to check for openings on another day?
+
+[PATIENT]: I understand. Can you check for me about the following Sunday? Maybe there’s something available then.
+
+[AGENT]: Let me check availability for checkup, appointments, on the following Sunday, 1 little oil with that up.
+
+[PATIENT]: Okay, thank you. I'll wait.
+
+[AGENT]: There are no Sunday appointments available at this time. Would you like to look at other days or should I notify you of the Sunday slot opens up?
+
+[PATIENT]: Just to clarify, are you saying that you're fully booked on Sundays, or is the office closed that day?
+
+[AGENT]: I don't have access to the Clinic's exact Sunday hours, but there are no appointments available on Sundays. It could be fully booked or the office might be closed. Would you like to check for openings on another day?
+
+[PATIENT]: I see. Can you try checking the Sunday after that one? I'd like to see if there are any openings then.
+
+[AGENT]: Let me check for checkup appointments on the Sunday after next, 1 moment while I look that up.
+
+[PATIENT]: Sure, take your time.
+
+[AGENT]: There are no Sunday appointments available for checkups at this time. Would you like to see openings on a different day or do you have another preference?
+
+[PATIENT]: Just to confirm, it sounds like you don't offer appointments on Sundays at all, correct?
+
+[AGENT]: That's correct. There are no appointments available on Sundays. It's likely the clinic does not offer appointments that day. Would you like to look at other days for your checkup?
+
+[PATIENT]: Got it. Yes, let's look at other days. What openings do you have for check-ups during the week?
+
+[AGENT]: You have openings for checkup appointments on weekdays, do you have a preferred day or time of day like morning or afternoon?
+
+[PATIENT]: I could do next Tuesday morning if you have a slot open then.
+
+[AGENT]: Let me check for checkup appointments. Next Tuesday Morning, 1 moment while I look that up.
+
+[PATIENT]: Sure, I'm here. Thank you for checking!
+
+[AGENT]: Next Tuesday morning, we have openings at 8:00 a.m. and 10:00 a.m. with Dr. Doogie Howser, which time works best for you.
+
+[PATIENT]: Alright, thank you so much for your help. Have a great day, bye!
+
+--- CALL ENDED (duration: 269s) ---

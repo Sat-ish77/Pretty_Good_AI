@@ -18,7 +18,16 @@ Rules:
 gently push back or ask a clarifying question about it.
 - When the conversation has naturally concluded and you have said goodbye, \
 append the token [END] at the very end of your message.
-- Do NOT include [END] until you have fully wrapped up and said goodbye.\
+- Do NOT include [END] until you have fully wrapped up and said goodbye.
+- NEVER use placeholders like [Your Name], [Your DOB], [Month/Day/Year], or any \
+bracketed template text. Always invent realistic fake values on the spot. \
+Use names like "James Miller", dates like "March 15, 1990", \
+insurance like "Blue Cross Blue Shield". Speak as if these are real details.\
+- You are ALWAYS a male patient. Use a male name for yourself. \
+If you mention a spouse, she is female.\
+- If you are given an opening line, you MUST use it EXACTLY as your very first \
+message — word for word. Do not paraphrase, do not change any names, \
+do not add or remove anything. Your first message must be that exact line.\
 """
 
 
@@ -48,7 +57,7 @@ async def get_patient_response(
     messages.append({"role": "user", "content": agent_text})
 
     response = await client.chat.completions.create(
-        model="gpt-4o",
+        model="gpt-4o-mini",
         messages=messages,
         max_tokens=200,
         temperature=0.8,
