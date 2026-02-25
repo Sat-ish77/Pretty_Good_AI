@@ -6,7 +6,7 @@ An automated voice bot that calls the Pretty Good AI test line, simulates realis
 
 See [`architecture.md`](architecture.md) for the full design doc.
 
-**TL;DR:** `call_manager.py` tells Twilio to dial the test number. Twilio connects and hits our FastAPI webhook. We use `<Gather input="speech">` to capture the agent's speech (Twilio does real-time STT), send the text to GPT-4o to generate the patient's response, and return `<Say>` TwiML so Twilio speaks it back. This loop repeats until the conversation ends. Transcripts are saved to disk, then reviewed for bugs.
+**TL;DR:** `call_manager.py` tells Twilio to dial the test number. Twilio connects and hits our FastAPI webhook. We use `<Gather input="speech">` to capture the agent's speech (Twilio does real-time STT), send the text to GPT-4o-mini to generate the patient's response, and immediately play a pre-generated filler sound while ElevenLabs synthesizes the real audio in the background. This loop repeats until the conversation ends. Transcripts are saved to disk, then reviewed for bugs.
 
 ## Quick Start
 
@@ -16,6 +16,7 @@ See [`architecture.md`](architecture.md) for the full design doc.
 - [ngrok](https://ngrok.com/) account (free tier works)
 - Twilio account with a phone number
 - OpenAI API key
+- ElevenLabs API key
 
 ### Setup
 
@@ -72,10 +73,12 @@ python call_manager.py --list
 ```
 ├── main.py              # FastAPI server — Twilio webhook endpoints
 ├── call_manager.py      # CLI to initiate outbound calls via Twilio
-├── patient_brain.py     # GPT-4o — generates patient responses per scenario
+├── patient_brain.py     # GPT-4o-mini — generates patient responses per scenario
+├── voice_synthesizer.py # ElevenLabs TTS — synthesizes patient audio
 ├── scenarios.py         # 11 patient scenarios with persona prompts
 ├── transcript_logger.py # Saves conversation transcripts to files
 ├── transcripts/         # Saved call transcripts (auto-created)
+├── audio_cache/         # Pre-generated filler audio + per-turn responses
 ├── bug_report.md        # Bugs found in the agent's responses
 ├── architecture.md      # System design doc
 ├── .env.example         # Required environment variables template
@@ -91,9 +94,11 @@ python call_manager.py --list
 | `TWILIO_AUTH_TOKEN` | Yes | Twilio auth token |
 | `TWILIO_PHONE_NUMBER` | Yes | Your Twilio number (E.164, e.g. +12345678900) |
 | `TARGET_PHONE_NUMBER` | No | Test line (default: +18054398008) |
-| `OPENAI_API_KEY` | Yes | OpenAI API key for GPT-4o |
+| `OPENAI_API_KEY` | Yes | OpenAI API key for GPT-4o-mini |
+| `ELEVENLABS_API_KEY` | Yes | ElevenLabs API key for TTS |
+| `ELEVENLABS_VOICE_ID` | Yes | ElevenLabs voice ID |
 | `NGROK_URL` | Yes | Your ngrok public HTTPS URL |
-| `TTS_VOICE` | No | Polly voice (default: Polly.Matthew-Neural) |
+| `TTS_VOICE` | No | Polly fallback voice (default: Polly.Matthew-Neural) |
 
 ## Test Scenarios
 
