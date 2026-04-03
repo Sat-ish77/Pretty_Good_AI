@@ -1,4 +1,10 @@
+
+from pathlib import Path
 from dotenv import load_dotenv
+if not Path('.env').exists():
+    import logging
+    logging.basicConfig(level=logging.INFO)
+    logging.warning("No .env file found. Please create one from .env.example.")
 load_dotenv()
 
 import os
@@ -79,8 +85,11 @@ VOICE = os.getenv("TTS_VOICE", "Polly.Matthew-Neural")
 
 conversations: dict[str, dict] = {}
 
-os.makedirs("transcripts", exist_ok=True)
-os.makedirs("audio_cache", exist_ok=True)
+Path("transcripts").mkdir(exist_ok=True)
+Path("audio_cache").mkdir(exist_ok=True)
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
 
 app.mount("/audio", StaticFiles(directory="audio_cache"), name="audio")
 
