@@ -1,4 +1,5 @@
 import os
+import json
 from datetime import datetime
 
 TRANSCRIPT_DIR = "transcripts"
@@ -16,6 +17,7 @@ class TranscriptLogger:
 
     def save(self, duration: int = 0) -> str:
         os.makedirs(TRANSCRIPT_DIR, exist_ok=True)
+
         filename = f"{self.scenario_name}_{self.call_sid[:8]}.txt"
         filepath = os.path.join(TRANSCRIPT_DIR, filename)
 
@@ -30,5 +32,21 @@ class TranscriptLogger:
                 f.write(f"[{entry['role']}]: {entry['text']}\n\n")
 
             f.write(f"--- CALL ENDED (duration: {duration}s) ---\n")
+
+        json_filename = f"{self.scenario_name}_{self.call_sid[:8]}.json"
+        json_filepath = os.path.join(TRANSCRIPT_DIR, json_filename)
+
+        with open(json_filepath, "w", encoding="utf-8") as jf:
+            json.dump(
+                {
+                    "scenario": self.scenario_name,
+                    "call_sid": self.call_sid,
+                    "date": self.start_time.strftime("%Y-%m-%d %H:%M:%S"),
+                    "duration": duration,
+                    "transcript": self.entries,
+                },
+                jf,
+                indent=4,
+            )
 
         return filepath
